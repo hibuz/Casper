@@ -25,12 +25,11 @@
                     <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
                 {{/if}}
                 {{#if @site.twitter}}
-                    <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+                    <a class="social-link social-link-tw" href="https://github.com/hibuz" title="Github" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+                    <a class="social-link social-link-tw" href="https://top.hibuz.com" title="Top 20 Companies in the world by Market Cap Today" target="_blank" rel="noopener">{{> "icons/marketcap"}}</a>
                 {{/if}}
             </div>
-            {{#unless @labs.members}}
-                <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-            {{/unless}}
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
         {{/if}}
 
         {{#if @labs.members}}
